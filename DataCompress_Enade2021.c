@@ -57,8 +57,6 @@ void RLEDecompressFile(char* inputFilename, char* outputFilename) {
 void calculateCompressionRateAndFactor(bool isRLE, char* originalFilename, char* compressedFilename) {
     const char* fileReadMethod = isRLE ? "r" : "rb";
 
-    printf("%s", fileReadMethod);
-    
     FILE *originalFile = fopen(originalFilename, fileReadMethod);
     FILE *compressedFile = fopen(compressedFilename, fileReadMethod);
 
@@ -231,15 +229,19 @@ void LZWDecompressFile(char* inputFilename, char* outputFilename) {
 int main() {
     char* RLEoriginalFile1 = "microdados2021_arq1.txt";
     char* LZWoriginalFile1 = "microdados2021_arq1.lzw";
+
     char* RLEcompressedFile1 = "microdados2021_arq1_compressed.txt";
     char* RLEdecompressedFile1 = "microdados2021_arq1_decompressed.txt";
+    
     char* LZWcompressedFile1 = "microdados2021_arq1_compressed.lzw";
     char* LZWdecompressedFile1 = "microdados2021_arq1_decompressed.lzw";
     
     char* RLEoriginalFile3 = "microdados2021_arq3.txt";
     char* LZWoriginalFile3 = "microdados2021_arq3.lzw";
+    
     char* RLEcompressedFile3 = "microdados2021_arq3_compressed.txt";
     char* RLEdecompressedFile3 = "microdados2021_arq3_decompressed.txt";
+    
     char* LZWcompressedFile3 = "microdados2021_arq3_compressed.lzw";
     char* LZWdecompressedFile3 = "microdados2021_arq3_decompressed.lzw";
 
