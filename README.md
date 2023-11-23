@@ -1,4 +1,4 @@
-# ENADE 2021 Database Compress and Decompress with RLE & LZW (🇧🇷/🇺🇸)
+# ENADE - 2021 Database Compress and Decompress with RLE & LZW (🇧🇷/🇺🇸)
 
 ## 🇧🇷 Sobre o Presente Código
 
